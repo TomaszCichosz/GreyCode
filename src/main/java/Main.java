@@ -29,7 +29,7 @@ public class Main {  //http://pl.spoj.com/problems/PP0505D/
     }
 
     private static List<String> grayCodeArrayCreator(int lengthOfBinaryString, List<String> grayCodeArray) {
-        while (lengthOfBinaryString != 1) {
+        while (lengthOfBinaryString > 1) {
             grayCodeArray = arrayExtender(grayCodeArray);
             grayCodeArray = arrayFiller(grayCodeArray);
             return grayCodeArrayCreator(--lengthOfBinaryString, grayCodeArray);
